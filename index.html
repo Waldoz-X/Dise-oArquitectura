@@ -11,7 +11,7 @@
 
     <title>Dashborad - CinemaPremier</title>
 
-  <!-- Fuentes para la plantilla-->
+    <!-- Fuentes para la plantilla-->
     <link rel="stylesheet" href="vendor/butterup-main/butterup.min.css" />
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -19,14 +19,14 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-        
+
 
     <!-- Estilos personalizados -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/Dashboard/navbar-styles.css" rel="stylesheet" >
-    <link href="css/InventarioDulceria/InventarioDulceria.css" rel="stylesheet" >
-    <link href="css/ventaDulceria/ventaDulceria.css" rel="stylesheet" >
-    <link href="css/Dashboard/reservaAsientos.css" rel="stylesheet" >
+    <link href="pages/css/Dashboard/navbar-styles.css" rel="stylesheet">
+    <link href="pages/css/InventarioDulceria/InventarioDulceria.css" rel="stylesheet">
+    <link href="pages/css/ventaDulceria/ventaDulceria.css" rel="stylesheet">
+    <link href="pages/css/Dashboard/reservaAsientos.css" rel="stylesheet">
 
 
 
@@ -46,7 +46,7 @@
                     <img src="img/logo-cinema.png" alt="Logo" style="width: 60px; height: 60px;">
                 </div>
             </a>
-            
+
 
             <!-- Divisor -->
             <hr class="sidebar-divider my-0">
@@ -66,18 +66,21 @@
                 Gestiones
             </div>
 
-                    <!-- Nav Item - Contraer menú de Gestion de boletos-->
+            <!-- Nav Item - Contraer menú de Gestion de boletos-->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBoletos"
                     aria-expanded="true" aria-controls="collapseBoletos">
                     <i class="fas fa-clipboard-list"></i>
                     <span>Gestión de boletos</span>
                 </a>
-                <div id="collapseBoletos" class="collapse" aria-labelledby="headingBoletos" data-parent="#accordionSidebar">
+                <div id="collapseBoletos" class="collapse" aria-labelledby="headingBoletos"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ventaBoletos.html">Venta de boletos</a>
-                        <a class="collapse-item" href="reservacionBoletos.html">Reservación de boletos</a>
-                        <a class="collapse-item" href="validacionBoletos.html">Validación de boletos</a>
+                        <a class="collapse-item" href="pages/gestionDeBoletos/ventaBoletos.html">Venta de boletos</a>
+                        <a class="collapse-item" href="pages/gestionDeBoletos/reservacionBoletos.html">Reservación de
+                            boletos</a>
+                        <a class="collapse-item" href="pages/gestionDeBoletos/validacionBoletos.html">Validación de
+                            boletos</a>
                     </div>
                 </div>
             </li>
@@ -91,25 +94,32 @@
                 </a>
                 <div id="collapseSalas" class="collapse" aria-labelledby="headingSalas" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Gestión</a>
-                        <a class="collapse-item" href="cards.html">Configuración de <br>proyección</a>
-                        <a class="collapse-item" href="cards.html">Mantenimiento de salas</a>
+                        <a class="collapse-item" href="pages/gestionDeSalas/gestionSalas.html">Gestión</a>
+                        <a class="collapse-item" href="pages/gestionDeSalas/configuracionProyeccin.html">Configuración
+                            de <br>proyección</a>
+                        <a class="collapse-item" href="pages/gestionDeSalas/mantenimientoSalas.html">Mantenimiento de
+                            salas</a>
                     </div>
                 </div>
             </li>
 
-             <!-- Nav Item - Contraer menú de Gestion de Funciones-->
-             <li class="nav-item">
+            <!-- Nav Item - Contraer menú de Gestion de Funciones-->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFunciones"
                     aria-expanded="true" aria-controls="collapseFunciones">
                     <i class="fas fa-clipboard-list"></i>
                     <span>Gestión de funciones</span>
                 </a>
-                <div id="collapseFunciones" class="collapse" aria-labelledby="headingFunciones" data-parent="#accordionSidebar">
+                <div id="collapseFunciones" class="collapse" aria-labelledby="headingFunciones"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Programación de funciones</a>
-                        <a class="collapse-item" href="cards.html">Gestión de funciones <br>especiales y estrenos</a>
-                        <a class="collapse-item" href="cards.html">Gestión de funciones <br>canceladas</a>
+                        <a class="collapse-item"
+                            href="pages/gestionDeFunciones/programacionDeFunciones.html">Programación de funciones</a>
+                        <a class="collapse-item" href="pages/gestionDeFunciones/gestionFuncionesEspeciales.html">Gestión
+                            de funciones <br>especiales y estrenos</a>
+                        <a class="collapse-item"
+                            href="pages/gestionDeFunciones/gestionDeFuncionesCanceladas.html">Gestión de funciones
+                            <br>canceladas</a>
                     </div>
                 </div>
             </li>
@@ -121,33 +131,41 @@
                     <i class="fas fa-clipboard-list"></i>
                     <span>Gestión de empleados</span>
                 </a>
-                <div id="collapseEmpleados" class="collapse" aria-labelledby="headingEmpleados" data-parent="#accordionSidebar">
+                <div id="collapseEmpleados" class="collapse" aria-labelledby="headingEmpleados"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="gestionEmpleados.html">Gestión de empleados</a>
-                        <a class="collapse-item" href="gestionRoles.html">Gestión de roles de <br>empleados</a>
-                        <a class="collapse-item" href="controlAsistencia.html">Control de asistencia<br>de empleados</a>
+                        <a class="collapse-item" href="pages/gestionDeEmpleados/gestionEmpleados.html">Gestión de
+                            empleados</a>
+                        <a class="collapse-item" href="pages/gestionDeEmpleados/gestionRoles.html">Gestión de roles de
+                            <br>empleados</a>
+                        <a class="collapse-item" href="pages/gestionDeEmpleados/controlAsistencia.html">Control de
+                            asistencia<br>de empleados</a>
                     </div>
                 </div>
             </li>
 
-             <!-- Nav Item - Contraer menú de Gestion de clientes-->
-             <li class="nav-item">
+            <!-- Nav Item - Contraer menú de Gestion de clientes-->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes"
                     aria-expanded="true" aria-controls="collapseClientes">
                     <i class="fas fa-clipboard-list"></i>
                     <span>Gestión de clientes</span>
                 </a>
-                <div id="collapseClientes" class="collapse" aria-labelledby="headingClientes" data-parent="#accordionSidebar">
+                <div id="collapseClientes" class="collapse" aria-labelledby="headingClientes"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Gestión</a>
-                        <a class="collapse-item" href="cards.html">Registro de clientes</a>
-                        <a class="collapse-item" href="cards.html">Historial de compras<br>de clientes</a>
+                        <a class="collapse-item" href="pages/gestionDeClientes/gestionClientes.html">Gestión</a>
+                        <a class="collapse-item" href="pages/gestionDeClientes/registroDeClientes.html">Registro de
+                            clientes</a>
+                        <a class="collapse-item"
+                            href="pages/gestionDeClientes/historialDeComprasDeClientes.html">Historial de compras<br>de
+                            clientes</a>
                     </div>
                 </div>
             </li>
 
 
-            
+
 
             <!-- Divisor -->
             <hr class="sidebar-divider">
@@ -164,11 +182,13 @@
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Dulcería</span>
                 </a>
-                <div id="collapseDulceria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapseDulceria" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="inventario-dulceria.html">Inventario de dulcería</a>
-                        <a class="collapse-item" href="preciosDulceria.html">Gestión de precios</br> de dulcería</a>
-                        <a class="collapse-item" href="ventas-dulceria.html">Ventas de dulcería</a>
+                        <a class="collapse-item" href="pages/dulceria/inventariDulceria.html">Inventario de dulcería</a>
+                        <a class="collapse-item" href="pages/dulceria/preciosDulceria.html">Gestión de precios</br> de
+                            dulcería</a>
+                        <a class="collapse-item" href="pages/dulceria/ventasDulceria.html">Ventas de dulcería</a>
                     </div>
                 </div>
             </li>
@@ -181,26 +201,28 @@
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Peliculas</span>
                 </a>
-                <div id="collapsePeliculas" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapsePeliculas" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="index.html">Login</a>
+                        <a class="collapse-item" href="index.html">Register</a>
                     </div>
                 </div>
             </li>
 
 
-             <!-- Nav Item - Contraer menú de Reportes -->
-             <li class="nav-item">
+            <!-- Nav Item - Contraer menú de Reportes -->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReportes"
                     aria-expanded="true" aria-controls="collapseReportes">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Reportes</span>
                 </a>
-                <div id="collapseReportes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapseReportes" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="login.html">Reportes de ventas</a>
-                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="pages/reportes/reportesDeVentas.html">Reportes de ventas</a>
+                        <a class="collapse-item" href="pages/reportes/reportesDeVentas.html">Reportes de algo</a>
                     </div>
                 </div>
             </li>
@@ -208,11 +230,11 @@
 
 
 
-            
 
-           
 
-          
+
+
+
 
         </ul>
         <!-- Fin de la Sidebar -->
@@ -228,115 +250,164 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                
+
                     <!-- Texto dentro de la barra -->
                     <span class="navbar-title">
                         Cinema Premier
                     </span>
                 </nav>
-            
-        <!-- Contenido dentro del dashboard -->
-        <div class="container-fluid">
-            <div class="row g-5">
-                <div class="col-md-4 col-lg-3">
-                    <a href="ventaBoletos.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-ticket-alt fa-3x" ></i>
-                            <h5 class="card-title mt-3">Venta de boletos</h5>
-                            <p class="card-text">&nbsp;</p>
+
+                <!-- Contenido dentro del dashboard -->
+                <div class="container-fluid">
+                    <div class="row g-5">
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeBoletos/ventaBoletos.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="ventaBoletos.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-ticket-alt fa-3x"></i>
+                                    <h5 class="card-title mt-3">Venta de boletos</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <a href="peliculas.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fa fa-film fa-3x" ></i>
-                            <h5 class="card-title mt-3">Peliculas</h5>
-                            <p class="card-text">&nbsp;</p>
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/peliculas/" class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="peliculas.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fa fa-film fa-3x"></i>
+                                    <h5 class="card-title mt-3">Peliculas</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                     
-                <div class="col-md-4 col-lg-3">
-                    <a href="gestionSalas.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-video fa-3x"></i>
-                            <h5 class="card-title mt-3">Gestión de salas</h5>
-                            <p class="card-text">&nbsp;</p>
+
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeSalas/gestionSalas.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="gestionSalas.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-video fa-3x"></i>
+                                    <h5 class="card-title mt-3">Gestión de salas</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeEmpleados/gestionEmpleados.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="gestionEmpleados.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-users fa-3x"></i>
+                                    <h5 class="card-title mt-3">Gestión de empleados</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/dulceria/ventasDulceria.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="ventas-dulceria.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-cash-register fa-3x"></i>
+                                    <h5 class="card-title mt-3">Ventas de dulcería</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeClientes/gestionClientes.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="gestion-clientes.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-users fa-3x"></i>
+                                    <h5 class="card-title mt-3">Gestión de clientes</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeFunciones/programacionDeFunciones.html"
+=======
+                            <a href="programacion-funciones.html"
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                class="card text-center text-decoration-none shadow mb-4">
+                                <div class="card-body">
+                                    <i class="fas fa-clock fa-3x"></i>
+                                    <h5 class="card-title mt-3">Programación de funciones</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeEmpleados/gestionRoles.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="gestionRoles.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-user-cog fa-3x"></i>
+                                    <h5 class="card-title mt-3">Gestión de roles</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/gestionDeClientes/registroDeClientes.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="registro-clientes.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="fas fa-user-plus fa-3x"></i>
+                                    <h5 class="card-title mt-3">Registro de clientes</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+<<<<<<< HEAD
+                            <a href="pages/reportes/reportesDeVentas.html"
+                                class="card text-center text-decoration-none shadow mb-4">
+=======
+                            <a href="reportes.html" class="card text-center text-decoration-none shadow mb-4">
+>>>>>>> 1b3c87f (Me dicen noe porque acarreo a todos estos animales)
+                                <div class="card-body">
+                                    <i class="far fa-file-pdf fa-3x"></i>
+                                    <h5 class="card-title mt-3">Reportes</h5>
+                                    <p class="card-text">&nbsp;</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-4 col-lg-3">
-                    <a href="gestionEmpleados.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-users fa-3x"></i>
-                            <h5 class="card-title mt-3">Gestión de empleados</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="col-md-4 col-lg-3">
-                    <a href="ventas-dulceria.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-cash-register fa-3x"></i>
-                            <h5 class="card-title mt-3">Ventas de dulcería</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <a href="gestion-clientes.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-users fa-3x"></i>
-                            <h5 class="card-title mt-3">Gestión de clientes</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <a href="programacion-funciones.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-clock fa-3x"></i>
-                            <h5 class="card-title mt-3">Programación de funciones</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <a href="gestionRoles.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-user-cog fa-3x"></i>
-                            <h5 class="card-title mt-3">Gestión de roles de empleados</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <a href="registro-clientes.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="fas fa-user-plus fa-3x"></i>
-                            <h5 class="card-title mt-3">Registro de clientes</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <a href="reportes.html" class="card text-center text-decoration-none shadow mb-4">
-                        <div class="card-body">
-                            <i class="far fa-file-pdf fa-3x"></i>
-                            <h5 class="card-title mt-3">Reportes</h5>
-                            <p class="card-text">&nbsp;</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        
-                
-                        <!-- Contenido dentro del dashboard -->
+
+                <!-- Contenido dentro del dashboard -->
 
 
 

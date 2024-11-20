@@ -11,8 +11,8 @@
 
     <title>Dashborad - CinemaPremier</title>
 
-  <!-- Fuentes para la plantilla-->
-    
+    <!-- Fuentes para la plantilla-->
+
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -20,11 +20,7 @@
 
     <!-- Estilos personalizados -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/Dashboard/navbar-styles.css" rel="stylesheet" >
-    <link href="css/InventarioDulceria/InventarioDulceria.css" rel="stylesheet" >
-    <link href="css/ventaDulceria/ventaDulceria.css" rel="stylesheet" >
-    <link href="css/Dashboard/reservaAsientos.css" rel="stylesheet" >
-
+    <link href="css/Dashboard/navbar-styles.css" rel="stylesheet">
 
 
 </head>
@@ -43,7 +39,7 @@
                     <img src="img/logo-cinema.png" alt="Logo" style="width: 60px; height: 60px;">
                 </div>
             </a>
-            
+
 
             <!-- Divisor -->
             <hr class="sidebar-divider my-0">
@@ -51,8 +47,8 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-home"></i>
-                    <span>Inicio</span></a>
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
             </li>
 
             <!-- Divisor -->
@@ -63,18 +59,19 @@
                 Gestiones
             </div>
 
-                    <!-- Nav Item - Contraer menú de Gestion de boletos-->
+            <!-- Nav Item - Contraer menú de Gestion de boletos-->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBoletos"
                     aria-expanded="true" aria-controls="collapseBoletos">
-                    <i class="fas fa-clipboard-list"></i>
+                    <i class="fas fa-pen"></i>
                     <span>Gestión de boletos</span>
                 </a>
-                <div id="collapseBoletos" class="collapse" aria-labelledby="headingBoletos" data-parent="#accordionSidebar">
+                <div id="collapseBoletos" class="collapse" aria-labelledby="headingBoletos"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ventaBoletos.html">Venta de boletos</a>
-                        <a class="collapse-item" href="reservacionBoletos.html">Reservación de boletos</a>
-                        <a class="collapse-item" href="validacionBoletos.html">Validación de boletos</a>
+                        <a class="collapse-item" href="buttons.html">Venta de boletos</a>
+                        <a class="collapse-item" href="cards.html">Reservación de boletos</a>
+                        <a class="collapse-item" href="cards.html">Validación de boletos</a>
                     </div>
                 </div>
             </li>
@@ -83,7 +80,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSalas"
                     aria-expanded="true" aria-controls="collapseSalas">
-                    <i class="fas fa-clipboard-list"></i>
+                    <i class="fas fa-pen"></i>
                     <span>Gestión de salas</span>
                 </a>
                 <div id="collapseSalas" class="collapse" aria-labelledby="headingSalas" data-parent="#accordionSidebar">
@@ -95,14 +92,15 @@
                 </div>
             </li>
 
-             <!-- Nav Item - Contraer menú de Gestion de Funciones-->
-             <li class="nav-item">
+            <!-- Nav Item - Contraer menú de Gestion de Funciones-->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFunciones"
                     aria-expanded="true" aria-controls="collapseFunciones">
-                    <i class="fas fa-clipboard-list"></i>
+                    <i class="fas fa-pen"></i>
                     <span>Gestión de funciones</span>
                 </a>
-                <div id="collapseFunciones" class="collapse" aria-labelledby="headingFunciones" data-parent="#accordionSidebar">
+                <div id="collapseFunciones" class="collapse" aria-labelledby="headingFunciones"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="buttons.html">Programación de funciones</a>
                         <a class="collapse-item" href="cards.html">Gestión de funciones <br>especiales y estrenos</a>
@@ -115,26 +113,28 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEmpleados"
                     aria-expanded="true" aria-controls="collapseEmpleados">
-                    <i class="fas fa-clipboard-list"></i>
+                    <i class="fas fa-pen"></i>
                     <span>Gestión de empleados</span>
                 </a>
-                <div id="collapseEmpleados" class="collapse" aria-labelledby="headingEmpleados" data-parent="#accordionSidebar">
+                <div id="collapseEmpleados" class="collapse" aria-labelledby="headingEmpleados"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="gestionEmpleados.html">Gestión de empleados</a>
-                        <a class="collapse-item" href="gestionRoles.html">Gestión de roles de <br>empleados</a>
-                        <a class="collapse-item" href="controlAsistencia.html">Control de asistencia<br>de empleados</a>
+                        <a class="collapse-item" href="buttons.html">Gestión de empleados</a>
+                        <a class="collapse-item" href="cards.html">Gestión de roles de <br>empleados</a>
+                        <a class="collapse-item" href="buttons.html">Control de asistencia<br>de empleados</a>
                     </div>
                 </div>
             </li>
 
-             <!-- Nav Item - Contraer menú de Gestion de clientes-->
-             <li class="nav-item">
+            <!-- Nav Item - Contraer menú de Gestion de clientes-->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes"
                     aria-expanded="true" aria-controls="collapseClientes">
-                    <i class="fas fa-clipboard-list"></i>
+                    <i class="fas fa-pen"></i>
                     <span>Gestión de clientes</span>
                 </a>
-                <div id="collapseClientes" class="collapse" aria-labelledby="headingClientes" data-parent="#accordionSidebar">
+                <div id="collapseClientes" class="collapse" aria-labelledby="headingClientes"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="buttons.html">Gestión</a>
                         <a class="collapse-item" href="cards.html">Registro de clientes</a>
@@ -144,7 +144,7 @@
             </li>
 
 
-            
+
 
             <!-- Divisor -->
             <hr class="sidebar-divider">
@@ -161,10 +161,11 @@
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Dulcería</span>
                 </a>
-                <div id="collapseDulceria" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapseDulceria" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="inventario-dulceria.html">Inventario de dulcería</a>
-                        <a class="collapse-item" href="preciosDulceria.html">Gestión de precios</br> de dulcería</a>
+                        <a class="collapse-item" href="login.html">Inventario de dulcería</a>
+                        <a class="collapse-item" href="register.html">Gestión de precios de dulcería</a>
                         <a class="collapse-item" href="ventas-dulceria.html">Ventas de dulcería</a>
                     </div>
                 </div>
@@ -178,7 +179,8 @@
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Peliculas</span>
                 </a>
-                <div id="collapsePeliculas" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapsePeliculas" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="login.html">Login</a>
                         <a class="collapse-item" href="register.html">Register</a>
@@ -187,14 +189,15 @@
             </li>
 
 
-             <!-- Nav Item - Contraer menú de Reportes -->
-             <li class="nav-item">
+            <!-- Nav Item - Contraer menú de Reportes -->
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReportes"
                     aria-expanded="true" aria-controls="collapseReportes">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Reportes</span>
                 </a>
-                <div id="collapseReportes" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div id="collapseReportes" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="login.html">Reportes de ventas</a>
                         <a class="collapse-item" href="register.html">Register</a>
@@ -205,11 +208,11 @@
 
 
 
-            
 
-           
 
-          
+
+
+
 
         </ul>
         <!-- Fin de la Sidebar -->
@@ -221,103 +224,85 @@
             <div id="content">
 
                 <nav class="navbar navbar-expand navbar-light bg-red topbar mb-4 static-top shadow">
-                    <!-- Sidebar Toggle (Topbar) -->
+                    <!-- Sidebar Toggle (Barra superior) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                
+
                     <!-- Texto dentro de la barra -->
                     <span class="navbar-title">
                         Cinema Premier
                     </span>
                 </nav>
-                
 
 
-             <!-- Contenedor dentro de la página -->
-           <!-- Begin Page Content -->
-           <div class="container-fluid" id="seleccionAsientos">
 
-            <div class="container" >
-<h1>Seleccione Sus Asientos</h1>
-<div class="screen"></div>
-<div class="seats">
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-   <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-   <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-     <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-     <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-     <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-    <div class="asiento seleccionado"></div>
-    <div class="asiento seleccionado"></div>
-    <div class="asiento seleccionado"></div>
-    <div class="asiento"></div>
-    <div class="asiento"></div>
-    <div class="asiento ocupado"></div>
-   
- 
-</div>
-<div class="legend">
-    <div class="asiento"></div><span>No Seleccionado</span>
-    <div class="asiento seleccionado"></div><span>Seleccionado</span>
-    <div class="asiento ocupado"></div><span>Ocupado</span>
-</div>
-<br>
-<br>
-<div class="button-container">
-    <button class="submit-btn">Confirmar Selección</button>
-</div>
-</div>
-             </div>
-        <!-- /.container-fluid -->
-  <!-- Fin del contenedor -->
-                
-  
+
+                <!-- Contenedor dentro de la página -->
+                <div class="container mt-5">
+                    <form class="row g-4">
+                        <h3 class="mb-3 text-primary text-center">Registro</h3>
+                    </form>
+                    <div class="col-md-4">
+                        <label for="inputEmail4" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control shadow-sm" id="inputEmail4"
+                            placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control shadow-sm" id="inputPassword4"
+                            placeholder="********">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirección</label>
+                        <input type="text" class="form-control shadow-sm" id="inputAddress"
+                            placeholder="1234 Calle Principal">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Dirección 2</label>
+                        <input type="text" class="form-control shadow-sm" id="inputAddress2"
+                            placeholder="Apartamento, estudio o piso">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control shadow-sm" id="inputCity" placeholder="Ciudad">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Estado</label>
+                        <select id="inputState" class="form-select shadow-sm">
+                            <option selected>Selecciona...</option>
+                            <option>Estado 1</option>
+                            <option>Estado 2</option>
+                            <option>Estado 3</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Código Postal</label>
+                        <input type="text" class="form-control shadow-sm" id="inputZip" placeholder="12345">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input shadow-sm" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Acepto los términos y condiciones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary px-4 py-2 shadow-sm">Registrarme</button>
+                    </div>
+                    </form>
+                </div>
+                <!-- Fin del contenedor -->
+
+
 
             </div>
             <!-- Fin del contenido principal -->
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
-                <div class="my-auto">
+                <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; CinemaPremier 2024</span>
                     </div>
@@ -331,9 +316,9 @@
     </div>
     <!-- End of Page Wrapper -->
 
-   
 
-    
+
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
